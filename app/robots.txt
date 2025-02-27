@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://thevettemps.com
+Host: https://www.mobilekangaroo.com/
 
 # Sitemaps
 Sitemap: https://www.mobilekangaroo.com/sitemap.xml
