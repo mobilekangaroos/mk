@@ -17,6 +17,7 @@ import HeroImageSafari from "@/public/imgs/mk-hero-02.png";
 import HeroImage4K from "@/public/imgs/hero-safari-4k.png";
 import HeroImage4KSafari from "@/public/imgs/hero-safari-4k.png";
 import GreenChip2 from "@/components/GreenChip2";
+import Script from "next/script";
 
 const userIsUsingSafari = () => {
   return "ApplePaySession" in window;
@@ -34,8 +35,25 @@ export default function Home() {
   });
 
   return (
+    <>
+      <Script 
+        strategy="afterInteractive" 
+        src="https://www.googletagmanager.com/gtag/js?id=G-4N3HTSREZ6" 
+      />
+      
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4N3HTSREZ6', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
     <main className="relative flex min-h-screen flex-col items-center justify-between max-w-[100svw] overflow-hidden bg-gradient-to-b from-white to-gray-200 from-10%">
       <div className="_heroImg relative min-h-[20rem] md:min-h-[32rem] h-auto w-full overflow-visible">
+        
         <Image
           alt="A big illustration of a mobilekangaroo store with two kangaroos repairing multiple devices."
           src={isSafari ? HeroImageSafari : HeroImage}
@@ -313,5 +331,6 @@ export default function Home() {
         </div>
       </article>
     </main>
+    </>
   );
 }
