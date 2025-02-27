@@ -7,6 +7,7 @@ import DevicePortal from "@/public/imgs/affiliate-skeleton.svg"
 import EducationBubbles from "@/public/imgs/bubbles-imgs.svg"
 import { useState, useRef } from 'react';
 import UserForm from '@/components/UserForm';
+import HeadingH1 from './HeadingH1';
 
 export default function EducationPage() {
   const steps = [
@@ -62,16 +63,16 @@ const GetSampleData = async(sampleUserData:any) => {
     <>
       <section>
         <div className='flex flex-col overflow-hidden'>
-          <Heading heading='Education Program' subheading='We help schools and colleges by providing timely and efficient repairs and maintenance services.' />
+          <HeadingH1 heading='Education Program' subheading='We help schools and colleges by providing timely and efficient repairs and maintenance services.' />
           <div className='relative w-full  lg:w-2/3 mx-auto'>
-          <img src="imgs/education-hero.webp" alt="Five kids doing their homework at the school's computer lab" srcSet="" />
+          <img src="imgs/education-hero.webp" alt="Five kids doing their homework at the school's computer lab" />
           </div>
         </div>
         <div className="bg-[#E8F4E3] px-2 w-[100svw] text-mk-green-800 py-4 flex flex-col justify-between">
             <p className='text-center'>Our exceptional technicians bring unparalleled knowledge and skill to every repair and service.</p>
           </div>
         <Heading heading='Quick turn-around service' subheading='No more interruptions! We promote and support education continuity by handing over your devices as fast as we can.' />
-        <Image alt="Four bubbles floating with images inside them. Children playing, pickup truck with a delivery man carrying a package" src={EducationBubbles} className='mx-auto'></Image>
+        <Image alt="Four bubbles floating with images inside them." src={EducationBubbles} className='mx-auto'></Image>
         <Heading heading='Flexibility' subheading='We can pick-up, repair and deliver devices and accept Purchase Orders.' />
         <article className='flex gap-4 mx-auto md:max-w-[40rem] justify-center max-w-full flex-wrap'>
           <div className='flex gap-2 items-center '>
@@ -98,7 +99,7 @@ const GetSampleData = async(sampleUserData:any) => {
         <section className='pb-8 md:max-w-[40rem] mx-auto'>
 
           <Heading heading='Kangaroo Device Portal' subheading='By becoming an affiliate, you get access to our customized MobileKangaroo portal, where you manage and track your repairs' />
-          <Image alt="A floating screen of the mobile kangaroo device portal showing notifications and personalized messages for device pick up and deliveries" src={DevicePortal} className='mx-auto'></Image>
+          <Image alt="A floating screen of the mobile kangaroo device portal." src={DevicePortal} className='mx-auto'></Image>
           <article className=''>
             <div ref={coinsRef} className='coins relative h-min w-80  flex gap-16 justify-center pt-6 mx-auto'>
               <div onMouseOver={() => handleHover(0)} className='group rounded-full h-16 w-16 grid place-items-center bg-gray-200 '>

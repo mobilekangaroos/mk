@@ -37,14 +37,14 @@ export default function Home() {
     <main className="relative flex min-h-screen flex-col items-center justify-between max-w-[100svw] overflow-hidden bg-gradient-to-b from-white to-gray-200 from-10%">
       <div className="_heroImg relative min-h-[20rem] md:min-h-[32rem] h-auto w-full overflow-visible">
         <Image
-          alt="A big illustration of a mobilekangaroo store with two kangaroos standing at the counter, repairing multiple devices. On the left side, a standing kangaroo is welcoming customers, while on the right side, a seated kangaroo is repairing a mobile device. In front of them stands a maple oval table with an Apple logo and an 'Authorized Service Provider' sign."
+          alt="A big illustration of a mobilekangaroo store with two kangaroos repairing multiple devices."
           src={isSafari ? HeroImageSafari : HeroImage}
           className="xl:hidden transform object-cover object-bottom"
           fill={true}
           priority={true}
         />
         <Image
-          alt="A big illustration of a mobilekangaroo store with two kangaroos standing at the counter, repairing multiple devices. On the left side, a standing kangaroo is welcoming customers, while on the right side, a seated kangaroo is repairing a mobile device. In front of them stands a maple oval table with an Apple logo and an 'Authorized Service Provider' sign."
+          alt="A big illustration of a mobilekangaroo store with two kangaroos repairing multiple devices."
           src={isSafari ? HeroImage4KSafari : HeroImage4K}
           priority={true}
           className="xl:block mx-auto"
@@ -114,13 +114,13 @@ export default function Home() {
           </p>
           <Image
             priority={true}
-            alt="A collage of Apple products available for repair. Apple TV, MacBooks, iPad, Apple Pencil, Apple Earpods, iPhone, and iWatch."
+            alt="A collage of Apple products available for repair."
             src={ImgAppleBannerMobile}
             className="md:hidden"
           ></Image>
           <Image
             priority={true}
-            alt="A collage of Apple products available for repair. Apple TV, MacBooks, iPad, Apple Pencil, Apple Earpods, iPhone, and iWatch."
+            alt="A collage of Apple products available for repair."
             className="hidden md:block mix-blend-multiply"
             src={ImgAppleBannerDesktop}
           ></Image>
@@ -175,13 +175,13 @@ export default function Home() {
       <section className="w-full grid place-items-center mt-10 bg-gray-100">
         <Image
           priority={true}
-          alt="A group of five children sitting right next to each other using their laptops and tablets while in the classroom"
+          alt="A group of five children sitting right next to each other using their laptops."
           src={EducationImg}
           className="md:hidden w-full"
         />
         <Image
           priority={true}
-          alt="A group of five children sitting right next to each other using their laptops and tablets while in the classroom"
+          alt="A group of five children sitting right next to each other using their laptops."
           src={EducationImgLg}
           className="hidden md:block"
         />
@@ -227,7 +227,7 @@ export default function Home() {
       >
         <Image
           priority={true}
-          alt="A map of the USA with pins on California, Arizona, New Jersey, Oregon, Tennessee, Texas, New York, Pennsylvania, New Mexico and Utah."
+          alt="Mobilekangaroo stores map Pins on California, Arizona, New Jersey, and more."
           src={LocationsImg}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="top-0 w-4/5 left-1/2 md:w-3/5 md:py-6 max-w-[36rem]"
@@ -306,7 +306,7 @@ export default function Home() {
         <div className="relative w-auto h-full max-w-[20rem]">
           <Image
             priority={true}
-            alt="Woman wearing a mobileKangaroo shirt, using a laptop and pointing upwards with both hands to a text that says TEXT (855) FIX-THAT"
+            alt="Woman offering mobileKangaroo services, laptop and Smartphone repair etc."
             className="mx-auto md:translate-x-0 z-100"
             src={ImgKangarooCustomer}
           ></Image>

@@ -6,9 +6,9 @@ interface HeadingProps {
 export default function Heading({ heading, subheading }: HeadingProps) {
   return (
     <div className="_sectionHeading px-2 py-6 col-start-1 col-span-full shrink mx-auto text-center">
-      <h3 className="text-2xl font-semibold text-gray-800 pb-2 lg:text-4xl">
+      <h2 className="text-2xl font-semibold text-gray-800 pb-2 lg:text-4xl">
         {heading}
-      </h3>
+      </h2>
       <p className="text-gray-600 font-light max-w-[60ch] mx-auto">
         {subheading}
       </p>

@@ -11,6 +11,7 @@ import Link from "next/link";
 import QualityService from "@/components/QualityService";
 import CTABanner from "@/components/CTABanner";
 import { generatePageMetadata } from '@/app/utils/metadata';
+import HeadingH1 from "@/components/HeadingH1";
 
 export const metadata = generatePageMetadata({
   title: 'Phone Repair Services | iPhone, Samsung, Pixel & More | Mobilekangaroo',
@@ -24,12 +25,12 @@ export default function Page() {
     <>
       <section className="_repairScreen grow py-6 px-4 text-gray-800 text-center bg-gray-100">
         <article className="pb-6">
-          <Heading
+        <HeadingH1
             heading="Phone Repairs"
             subheading="Trust us with your phone repairs, and we’ll ensure it's fixed swiftly and reliably with the highest quality service."
           />
           <Image
-            alt="Woman wearing a mobileKangaroo shirt, using a laptop and pointing upwards with both hands to a text that says TEXT (855) FIX-THAT"
+            alt="Phone Repair Services at mobileKangaroo stores."
             className="mx-auto"
             src={HeroPhones}
           />

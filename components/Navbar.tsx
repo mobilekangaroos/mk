@@ -55,7 +55,7 @@ export default function Navbar() {
       >
         <article className="w-full px-6 flex justify-between">
           <Image
-            alt="mobileKangaroo"
+            alt="mobileKangaroo logo image"
             src={mobileKangaroo}
             onClick={() => (window.location.href = "/")}
             className="h-6 hover:cursor-pointer"
@@ -104,7 +104,7 @@ export default function Navbar() {
         </ul>
       </section>
       <Image
-        alt="mobileKangaroo"
+        alt="mobileKangaroo logo image"
         src={mobileKangaroo}
         onClick={() => (window.location.href = "/")}
         className="hover:cursor-pointer"
@@ -144,14 +144,14 @@ export default function Navbar() {
       </ul>
       <div className="flex space-x-2">
         <Image
-          alt="mobileKangaroo"
+          alt="mobileKangaroo logo image"
           src={menuIcon}
           className="md:hidden"
           onClick={handleDropdownMenu}
         ></Image>
       </div>
       <Image
-        alt="mobileKangaroo"
+        alt="mobileKangaroo logo image"
         src={curveDivider}
         className="md:hidden absolute outline w-[calc(100%+4px)] top-full left-0 "
       ></Image>

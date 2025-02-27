@@ -12,6 +12,7 @@ import CTABanner from "@/components/CTABanner";
 import Link from "next/link";
 import QualityService from "@/components/QualityService";
 import { generatePageMetadata } from '@/app/utils/metadata';
+import HeadingH1 from "@/components/HeadingH1";
 
 export const metadata = generatePageMetadata({
   title: 'Affordable Computer Repair Services | Expert Computer Technicians | Mobilekangaroo',
@@ -25,17 +26,17 @@ export default function page() {
     <>
       <section className="_repairScreen grow py-6 px-4 text-gray-800 text-center bg-gray-100">
         <article className="pb-6">
-          <Heading
+          <HeadingH1
             heading="Computer Repairs"
             subheading="Experience uninterrupted productivity and creativity with our reliable solutions for computer malfunctions. We've got you covered!"
           />
           <Image
-            alt="Woman wearing a mobileKangaroo shirt, using a laptop and pointing upwards with both hands to a text that says TEXT (855) FIX-THAT"
+            alt="Affordable Computer Repair Services at mobileKangaroo stores."
             className="mx-auto md:hidden"
             src={HeroComputers}
           ></Image>
           <Image
-            alt="Woman wearing a mobileKangaroo shirt, using a laptop and pointing upwards with both hands to a text that says TEXT (855) FIX-THAT"
+            alt="Affordable Computer Repair Services at mobileKangaroo stores"
             className="hidden md:block mx-auto"
             src={HeroComputersDesktop}
           ></Image>

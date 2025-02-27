@@ -5,9 +5,9 @@ import ImgKangarooCustomer from "@/public/imgs/woman-with-laptop 1.png";
 export default function RepairService() {
   return (
     <article className="_repairServiceBanner px-4 pt-6 pb-2 bg-gray-200 text-center space-y-4">
-      <h4 className="text-xl text-center font-semibold md:text-2xl">
+      <h2 className="text-xl text-center font-semibold md:text-2xl">
         Mobile Kangaroo Repair Service
-      </h4>
+      </h2>
       <p className="text-gray-700 font-light max-w-[60ch] mx-auto">
         Our repair team offers exceptional service, backed by extensively
         trained technicians and over 20 years of industry experience.
@@ -16,14 +16,14 @@ export default function RepairService() {
         Text (855) FIX-THAT
       </h6>
       <a
-        href="https://mobilekangaroo.com/locations/1722457645624x314362141295771650"
+        href="/stores"
         className="text-blue-500 underline"
       >
         Start a repair
       </a>
       <div className="w-full ">
         <Image
-          alt="Woman wearing a mobileKangaroo shirt, using a laptop and pointing upwards with both hands to a text that says TEXT (855) FIX-THAT"
+          alt="Woman offering mobileKangaroo services, laptop and Smartphone repair etc."
           className="mx-auto w-72"
           src={ImgKangarooCustomer}
         ></Image>

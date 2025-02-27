@@ -12,6 +12,7 @@ import DevicePortal from "@/public/imgs/affiliate-skeleton.svg";
 import BusinessesBubbles from "@/public/imgs/bubbles-businesses.svg";
 import { useState, useRef } from "react";
 import UserForm from "@/components/UserForm";
+import HeadingH1 from "./HeadingH1";
 
 export default function BusinessPage() {
   const steps = [
@@ -38,7 +39,7 @@ export default function BusinessPage() {
     <>
       <section>
         <div className="flex flex-col overflow-hidden">
-          <Heading
+          <HeadingH1
             heading="Businesses"
             subheading="We help your business grow and function efficiently with our repair service."
           />
@@ -61,7 +62,7 @@ export default function BusinessPage() {
           subheading="Boost your business efficiency with our rapid device repair services, ensuring quick turn-around times to minimize downtime and keep your operations running seamlessly."
         />
         <Image
-          alt="Four bubbles floating with images inside them. Children playing, pickup truck with a delivery man carrying a package"
+          alt="Four bubbles floating with images inside them."
           src={BusinessesBubbles}
           className="mx-auto"
         ></Image>
@@ -103,7 +104,7 @@ export default function BusinessPage() {
             subheading="By becoming an affiliate, you get access to our customized MobileKangaroo portal, where you manage and track your repairs"
           />
           <Image
-            alt="A floating screen of the mobile kangaroo device portal showing notifications and personalized messages for device pick up and deliveries"
+            alt="A floating screen of the mobile kangaroo device portal."
             src={DevicePortal}
             className="mx-auto"
           ></Image>

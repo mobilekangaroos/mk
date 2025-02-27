@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
         <article className="_brandFooter pt-6">
           <div className="w-full grid place-items-center">
-            <Image alt="mobileKangaroo" src={mobileKangaroo}></Image>
+            <Image alt="mobileKangaroo logo image" src={mobileKangaroo}></Image>
           </div>
           <h6>mobilekangaroo</h6>
           <p className="text-gray-400 font-light text-xs">2003 - 2024</p>

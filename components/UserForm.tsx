@@ -62,7 +62,7 @@ export default function UserForm() {
       >
         <div>
           <Image
-            alt=""
+            alt="Just fill the form and get your device repaired"
             src={Waves}
             className="absolute top-[2px] w-full left-0  right-0 -translate-y-full md:hidden object-fill"
           ></Image>

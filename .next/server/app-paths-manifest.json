@@ -1,8 +1,7 @@
 {
-  "/about/page": "app/about/page.js",
-  "/game-consoles/page": "app/game-consoles/page.js",
+  "/business/page": "app/business/page.js",
+  "/computers/page": "app/computers/page.js",
   "/stores/page": "app/stores/page.js",
-  "/tablets/page": "app/tablets/page.js",
-  "/phones/page": "app/phones/page.js",
-  "/robots.txt/route": "app/robots.txt/route.js"
+  "/about/page": "app/about/page.js",
+  "/phones/page": "app/phones/page.js"
 }

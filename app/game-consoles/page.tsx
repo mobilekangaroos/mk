@@ -7,6 +7,7 @@ import RepairService from "@/components/RepairService";
 import CTABanner from "@/components/CTABanner";
 import QualityService from "@/components/QualityService";
 import { generatePageMetadata } from '@/app/utils/metadata';
+import HeadingH1 from "@/components/HeadingH1";
 
 export const metadata = generatePageMetadata({
   title: 'Expert Game Console Repairs | Mobilekangaroo',
@@ -20,12 +21,12 @@ export default function page() {
     <>
       <section className="_repairScreen grow py-6 px-4 text-gray-800 text-center bg-gray-100">
         <article className="pb-6">
-          <Heading
+          <HeadingH1
             heading="Game Console Repairs"
             subheading="Don't go another day without making it to the next level. Experience uninterrupted fun by staying in control."
           />
           <Image
-            alt="Woman wearing a mobileKangaroo shirt, using a laptop and pointing upwards with both hands to a text that says TEXT (855) FIX-THAT"
+            alt="Expert Game Console Repairs at mobileKangaroo stores."
             className="mx-auto"
             src={HeroConsoles}
           ></Image>
