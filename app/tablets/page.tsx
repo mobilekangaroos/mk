@@ -10,6 +10,14 @@ import RepairService from "@/components/RepairService";
 import CTABanner from "@/components/CTABanner";
 import Link from "next/link";
 import QualityService from "@/components/QualityService";
+import { generatePageMetadata } from '@/app/utils/metadata';
+
+export const metadata = generatePageMetadata({
+  title: 'Tablet Repair Services Near me | Mobilekangaroo',
+  description: "Experience uninterrupted productivity and creativity with our reliable solutions for tablet malfunctions. We've got you covered!",
+  keywords: 'tablet repair services at mobilekangaroo, iPad repair at same day, reliable solution for tablet malfunctions, samsung tablet repair, android tablet repair services, repair all brand tablets',
+  canonicalUrl: 'https://www.mobilekangaroo.com/tablets',
+});
 
 export default function page() {
   return (

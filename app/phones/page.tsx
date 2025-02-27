@@ -10,6 +10,14 @@ import RepairService from "@/components/RepairService";
 import Link from "next/link";
 import QualityService from "@/components/QualityService";
 import CTABanner from "@/components/CTABanner";
+import { generatePageMetadata } from '@/app/utils/metadata';
+
+export const metadata = generatePageMetadata({
+  title: 'Phone Repair Services | iPhone, Samsung, Pixel & More | Mobilekangaroo',
+  description: "Mobile Kangaroo deals in repair of all band’s mobile phone. iPhone screen repair at the same day and other fixes of any mobile phone",
+  keywords: 'phone repair services at mobilekangaroo, iPhone screen repair at same day, Same-day iPhone Screen Repair, samsung mobile repair, pixel mobile repair services, repair all brand mobiles',
+  canonicalUrl: 'https://www.mobilekangaroo.com/phones',
+});
 
 export default function Page() {
   return (

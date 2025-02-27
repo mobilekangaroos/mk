@@ -7,7 +7,7 @@ import {
   IoWarning,
 } from "react-icons/io5";
 import { useState } from "react";
-import Waves from "@/public/imgs/waves-inverted.svg";
+import Waves from "@/public/imgs/cta-banner-bg.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 

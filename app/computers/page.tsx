@@ -11,6 +11,14 @@ import RepairService from "@/components/RepairService";
 import CTABanner from "@/components/CTABanner";
 import Link from "next/link";
 import QualityService from "@/components/QualityService";
+import { generatePageMetadata } from '@/app/utils/metadata';
+
+export const metadata = generatePageMetadata({
+  title: 'Affordable Computer Repair Services | Expert Computer Technicians | Mobilekangaroo',
+  description: "Our computer repair technicians are experts and quickly fix all issues of computer. Get your computer repair today from mobilekangaroo computer repair services.",
+  keywords: 'computer repair services at mobilekangaroo, expert computer repair technicians, apple trained technicians, computer repair near me, computer repair store, exceptional computer repair services',
+  canonicalUrl: 'https://www.mobilekangaroo.com/computers',
+});
 
 export default function page() {
   return (

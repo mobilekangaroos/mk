@@ -6,6 +6,14 @@ import HeroConsoles from "@/public/imgs/hero-gameconsoles.png";
 import RepairService from "@/components/RepairService";
 import CTABanner from "@/components/CTABanner";
 import QualityService from "@/components/QualityService";
+import { generatePageMetadata } from '@/app/utils/metadata';
+
+export const metadata = generatePageMetadata({
+  title: 'Expert Game Console Repairs | Mobilekangaroo',
+  description: "Get your game console repair today from mobilekangaroo. Our experts can repair your game consoles quickly and in affordable prices.",
+  keywords: 'game console repair services at mobilekangaroo, expert game console repair technicians, fix dead battery issue, fix broken screen of game console, fix damaged speaker, repair faulty camera, game console repair near me, exceptional game console repair services',
+  canonicalUrl: 'https://www.mobilekangaroo.com/game-consoles',
+});
 
 export default function page() {
   return (

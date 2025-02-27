@@ -1,8 +1,16 @@
+import Head from "next/head";
 import Heading from "@/components/Heading";
 import React from "react";
 import Image from "next/image";
 import AboutKangaroo from "@/public/imgs/kangaroo-about.svg";
+import { generatePageMetadata } from '@/app/utils/metadata';
 
+export const metadata = generatePageMetadata({
+  title: 'About Our Services | Mobilekangaroo',
+  description: "Mobile Kangaroo has been repairing devices and solving problems since 2003 and initially started to 'hop data' between phones (hence the Kangaroo in our name).",
+  keywords: 'mobilekangaroo services, about mobilekangaroo company, about our device repair services',
+  canonicalUrl: 'https://www.mobilekangaroo.com/about',
+});
 export default function Page() {
   return (
     <>
@@ -24,7 +32,7 @@ export default function Page() {
             <p className="text-gray-500 max-w-[40rem] mx-auto text-left">
               Fully-trained, friendly technicians and easy access to our
               locations make Mobile Kangaroo the most convenient place to repair
-              your computer, phone , tablet or RC car. Our diagnostic tools and
+              your computer, phone, tablet or RC car. Our diagnostic tools and
               access to genuine parts enable our technicians to perform repairs
               properly, saving you time and expense. As one of the oldest repair
               shops in the nation, we are proficient and take great pride in our
